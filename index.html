@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sky Library</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>The Sky Library</h1>
+    </header>
+    <main>
+        <div class="bookForm">
+
+            <form id="addBookForm">
+                <div class="closeForm">
+                    <img src="./img/close-circle.svg" alt="Close form button" width="45px" height="45px" />
+                </div>
+                <h2>Add a Book</h2>
+                <label for="bookName">Book name:</label>
+                <input type="text" id="bookName" name="bookName" required></input>
+                <label for="bookAuthor">Author:</label>
+                <input type="text" id="bookAuthor" name="bookAuthor" required></input>
+                <label for="bookPages">Pages:</label>
+                <input type="number" id="bookPages" name="bookPages" required></input>
+                <label>Did you read it?</label>
+                <label>
+                    <input type="radio" name="bookRead" value="true" required />
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="bookRead" value="false" required />
+                    No
+                </label>
+                <button type="submit" id="addBookFormButton">Add book</button>
+            </form>
+        </div>
+        <div class="books"></div>
+        <div class="addBookButton">
+            <img src="./img/add.svg" alt="Add Book button" />
+        </div>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
